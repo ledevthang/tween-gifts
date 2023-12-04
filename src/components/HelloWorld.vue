@@ -9,23 +9,41 @@
         class="align-center justify-center"
       >
       <vue-damp-fireworks style="width: 100%;height: 100%" class="position-relative" duration="5000000">
-        <v-card style="z-index: -1; top: 0;background: #064866; display: flex; align-items: center" width="100%" height="100%" background-color="#fff" class="position-absolute">
+        <v-card style="z-index: -1; top: 0;background: #064866; display: flex; align-items: center;border-radius: 0px" width="100%" height="100%" background-color="#fff" class="position-absolute">
           <v-img
             v-if="memberSelected"
             :src="imageUrl"
           ></v-img>
         </v-card>
+        <v-btn
+           style="z-index: 1;position: absolute; top: 10px; left: 10px"
+                variant="text"
+                color="#02aab3"
+                @click="overlay = false"
+              >
+                <v-icon class="mr-2" size="30" color="#fff">
+                  mdi-arrow-left-bold-box
+                </v-icon>
+                <div class="text-white">
+                Quay Lại
+              </div>
+              </v-btn>
       </vue-damp-fireworks>
     </v-overlay>
     <v-responsive class="align-center text-center fill-height">
       <v-card style="background-color: #064866" theme="dark" class="pa-8 d-flex justify-center flex-wrap">
           <v-responsive max-width="550">
             <v-img
-              class="mx-auto mt-12 mb-16"
+              class="mx-auto mt-12 mb-10"
               max-height="140"
               max-width="240"
               src="https://namebook.caynen.vn/assets/logo-61c750d3.svg"
             ></v-img>
+            <v-btn class="mb-2" color="#00bdc7" variant="text">
+              Kiểm tra thông tin bảo hiểm nhân sự
+            </v-btn>
+            <!-- <h3>Kiểm tra thông tin bảo hiểm nhân sự </h3> -->
+
               <v-autocomplete
                 v-model="memberSelected"
                 :items="items"
@@ -42,11 +60,11 @@
               </v-autocomplete>
               <v-btn
                 size="large"
-                color="#00bdc7"
+                color="#02aab3"
                 @click="overlay = memberSelected ?  true : false"
               >
               <div class="text-white">
-                xem
+                Kiểm Tra
               </div>
                 <v-icon class="ml-2" size="30" color="#fff">
                   mdi-arrow-right-bold-box
@@ -75,9 +93,6 @@
         },
         {
           title: 'Nguyễn Hữu Tuấn',
-        },
-        {
-          title: 'Nguyễn Văn Việt',
         }
       ]
     }),
