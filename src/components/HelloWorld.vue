@@ -13,7 +13,16 @@
           <v-img
             v-if="memberSelected"
             :src="imageUrl"
-          ></v-img>
+          >
+          <template v-slot:placeholder>
+      <div class="d-flex align-center justify-center fill-height">
+        <v-progress-circular
+          color="grey-lighten-4"
+          indeterminate
+        ></v-progress-circular>
+      </div>
+    </template>
+          </v-img>
         </v-card>
         <v-btn
            style="z-index: 1;position: absolute; top: 10px; left: 10px"
