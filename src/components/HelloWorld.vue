@@ -82,18 +82,38 @@
       overlay: false,
       memberSelected: null,
       items: [
-        {
-          title: 'Lê Đức Thắng',
-        },
-        {
-          title: 'Vũ Thái Dương',
-        },
-        {
-          title: 'Nguyễn Văn Việt',
-        },
-        {
-          title: 'Nguyễn Hữu Tuấn',
-        }
+        "Lê Hoàng Long",
+        "Lê Văn Hưng",
+        "Nguyễn Văn Việt",
+        "Vũ Thái Dương",
+        "Trần Thùy Linh",
+        "Lê Tú Anh",
+        "Nguyễn Hữu Tuấn",
+        "Lê Đức Thắng",
+        "Nguyễn Tiến Đạt",
+        "Trịnh Thảo Phương",
+        "Đào Thị Kim Ngân",
+        "Nguyễn Thị Hường",
+        "Đặng Thị Thu Hương",
+        "Ngô Thanh Phú An",
+        "Nguyễn Như Quỳnh",
+        "Lâm Văn Hùng",
+        "Mai Thế Anh",
+        "Đàm Tiến Đông",
+        "Trịnh Hoàng Hiệp",
+        "Khúc Thị Lan Anh",
+        "Nguyễn Ngọc Long",
+        "Phạm Văn Đức",
+        "Đặng Thị Phương Thảo",
+        "Vũ Thành Toàn",
+        "Bùi Phương Mai",
+        "Từ Thị Trà My",
+        "Trịnh Thị Mai Hương",
+        "Đoàn Đức Hiếu",
+        "Trần Công Sơn",
+        "Trần Công Duy",
+        "Đỗ Thị Thu Thảo",
+        "Nguyễn Minh Đức"
       ]
     }),
     computed: {
